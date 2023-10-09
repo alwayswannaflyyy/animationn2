@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 200px;
+
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px white solid; */
+
+}
+
+.circle {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pillar {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloader {
+    border: solid 16px transparent;
+    border-radius: 50%;
+    border-top: 16px solid white;
+    width: 120px;
+    height: 120px;
+    animation: cloader 2s linear infinite;
+
+}
+
+@keyframes cloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dloader {
+    /* animation: dot1 2s linear infinite;
+    animation-delay: 2s; */
+    width: 120px;
+    height: 20px;
+    
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dot1 {
+    animation: dot1 0.6s linear infinite;
+    animation-delay: 1s;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot2 {
+    animation: dot1 0.6s linear infinite;
+    animation-delay: 1.1s;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot3 {
+    animation: dot1 0.6s linear infinite;
+        animation-delay: 1.2s; 
+        height: 15px;
+        width: 15px;
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+@keyframes dot1{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+@keyframes dot2{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes dot3{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.ploader{
+    width: 120px;
+    height: 120px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    
+}
+.p1{
+    /* animation: p1 1s linear infinite;
+    animation-delay: 4.2s; */
+    height: 60px;
+    width: 15px;
+    background-color: white;
+    
+
+}
+.p2{
+    /* animation: p2 1s linear infinite;
+    animation-delay: 5s; */
+    height: 60px;
+    width: 15px;
+    background-color: white;
+
+}
+.p3{
+    /* animation: p3 1s linear infinite;
+    animation-delay: 5.8s; */
+    height: 60px;
+    width: 15px;
+    background-color: white;
+
+}
+.p4{
+    /* animation: p4 1s linear infinite;
+    animation-delay: 6.6s; */
+    height: 60px;
+    width: 15px;
+    background-color: white;
+
+}
+.p5{
+    /* animation: p5 1s linear infinite; */
+    /* animation-delay: 3s; */
+    height: 60px;
+    width: 15px;
+    background-color: white;
+
+}
+.ploader> div{
+    background-color: #fff;
+    height: 100%;
+    
+    width: 10px;
+    display: inline-block;
+    animation: poo 1.2s infinite ease-in-out;
+}
+.ploader> div:nth-child(2){
+    animation-delay: -1.1s;
+}
+.ploader> div:nth-child(3){
+    animation-delay: -1.0s;
+}
+.ploader> div:nth-child(4){
+    animation-delay: -0.9s;
+}
+.ploader> div:nth-child(5){
+    animation-delay: -0.8s;
+}
+@keyframes poo{
+  0%, 40%, 100% {
+    transform: scaleY(0.4) ;
+  }
+  20%{
+    transform: scaleY(1);
+  }
+}
+/* @keyframes p2{
+    0%{
+      transform: scale(1) ;
+    }
+    100%{
+      transform: scaleY(1.5);
+    }
+  }
+@keyframes p3{
+    0%{
+      transform: scale(1) ;
+    }
+    100%{
+      transform: scaleY(1.5);
+    }
+  }
+@keyframes p4{
+    0%{
+      transform: scale(1) ;
+    }
+    100%{
+      transform: scaleY(1.5);
+    }
+  }
+@keyframes p5{
+    0%{
+      transform: scale(1) ;
+    }
+    100%{
+      transform: scaleY(1.5);
+    }
+  } */
+
+.sloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+  
+    position: relative;
+}
+.s1{
+    width: 15px;
+    height: 15px;
+    background-color: white ;
+    /* flex-grow: 1; */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.s2{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    /* flex-grow: 1; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.s3{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    /* flex-grow: 1; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.s4{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+   
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.sloader> div{
+    animation: afafa 0.8s linear infinite;
+}
+.sloader> :nth-child(1){
+    animation-delay: 0s;
+}
+.sloader> :nth-child(2){
+    animation-delay: 0.2s;
+}
+.sloader> :nth-child(3){
+    animation-delay: 0.4s;
+}
+.sloader> :nth-child(4){
+    animation-delay: 0.6s;
+}
+
+@keyframes afafa{
+    0% {
+        background: #fff;
+    }
+    1% {
+        background: var(--color);
+    }
+    51% {
+        background: white;
+    }
+}
+
